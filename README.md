@@ -1,5 +1,7 @@
 # SDHacks22
 
+![logo](sdHackslogo2.png)
+
 
 ## Purpose:
 
