@@ -13,8 +13,8 @@ export default function App() {
       <View>
         <Test />
       </View>
-    </ApolloProvider>
+   </ApolloProvider>
   );
 }
 
-AppRegistry.registerComponent('MyApplication', () => App);
+AppRegistry.registerComponent('Prospect', () => App);
