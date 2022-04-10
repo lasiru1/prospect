@@ -1,6 +1,6 @@
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
-import { AppRegistry, Text, View } from 'react-native';
-import Test from './app/screens/Test';
+import { AppRegistry } from 'react-native';
+import Login from './app/screens/Login';
 
 const client = new ApolloClient({
   uri: "localhost:4000/graphql",
@@ -10,9 +10,7 @@ const client = new ApolloClient({
 export default function App() {
   return (
     <ApolloProvider client={client}>
-      <View>
-        <Test />
-      </View>
+      <Login />
    </ApolloProvider>
   );
 }

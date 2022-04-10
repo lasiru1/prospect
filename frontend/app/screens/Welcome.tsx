@@ -1,11 +1,10 @@
 import {StyleSheet, StatusBar, Text, View, SafeAreaView, ActivityIndicator} from 'react-native';
 import React from "react";
 
-export default function App() {
+export default function Welcome() {
     return (
         <SafeAreaView style={styles.container}>
             <View>
-                <StatusBar style="auto"/>
                 <Text style = {styles.text}>
                     Prospect
                 </Text>
@@ -25,7 +24,6 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     text: {
-        fontFamily: "Inter_600SemiBold",
         color: '#ffffff',
         fontSize: 50,
         fontWeight: "bold",
