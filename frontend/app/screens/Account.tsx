@@ -26,7 +26,7 @@ export default function Account() {
             <View style={styles.container2}>
                 <View style={{
                     flexDirection: "row",
-                    backgroundColor: '#578c31',
+                    backgroundColor: '#8cbe68',
                     alignItems: 'center',
                     width: '100%',
                     justifyContent: 'center', marginTop: -3, paddingBottom: 2
@@ -57,29 +57,10 @@ export default function Account() {
                 </View>
             </View>
             <View>
-
-            <ImageBackground source={require('./app/assets/Background.png')}
-                             resizeMode="stretch" style={styles.image}>
-                <View style = {{alignItems: "center", position: "relative", marginTop: 20}}>
-                    <View style = {{flex: 1}}>
-                        <Text>
-                            Boning
-                        </Text>
-                    </View>
-                    <View style = {{flex: 1, alignItems: "center"}}>
-                        <Text>
-                            PFP
-                        </Text>
-                    </View>
-                    <View style = {{flex: 1, alignItems: "center"}}>
-                        <Text>
-                            140 points
-                        </Text>
-                    </View>
-
-                </View>
-
-            </ImageBackground>
+                <ImageBackground source={image}
+                                 style={styles.image}>
+                    <Text>Inside</Text>
+                </ImageBackground>
             </View>
         </SafeAreaView>
 
@@ -88,16 +69,16 @@ export default function Account() {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#578c31',
+        backgroundColor: '#8cbe68',
         width: '100%',
         justifyContent: 'center',
     }, container2: {
-        backgroundColor: '#578c31',
+        backgroundColor: '#8cbe68',
         alignItems: 'center',
         width: '100%',
         justifyContent: 'center',
         marginBottom: 10,
-        marginTop: 60
+        marginTop: 70
     },
     text: {
         color: '#ffffff',
