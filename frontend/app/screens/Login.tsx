@@ -3,11 +3,20 @@ import React from 'react';
 import { Image, SafeAreaView, StyleSheet, TextInput, View } from 'react-native';
 import LoginPage from "../assets/login_img.svg"
 
-function Login() {
+const Login: React.FC = () => {
     return (
         <SafeAreaView style={styles.container}>
             <LoginPage style={styles.image} />
-            <LoginTextInput style={styles.textInput} />
+            <LoginTextInput icon={
+                () => (
+                    <Image 
+                        source={{
+                            uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5VOIJTKhQNgBLepC2ZrFqrEJ4s8fKh0FySbaKu-kQk9IHaRPOo8h6nQ6oglSQX4GxciM&usqp=CAU"
+                        }}
+                        style={{width: "10%"}}
+                    />
+                )
+            } style={styles.textInput} />
         </SafeAreaView>
     );
 }
@@ -28,7 +37,8 @@ const styles = StyleSheet.create({
     },
     textInput: {
         position: 'relative',
-        marginTop: 10
+        marginTop: 10,
+        // boxShadow: "0px 2px 1px rgba(0, 0, 0, 0.12)"
     }
 })
 
