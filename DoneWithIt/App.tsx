@@ -5,7 +5,7 @@ export default function App() {
   console.log("App executed");
   return (
     <SafeAreaView style={styles.container}>
-      <Text onPress={console.log("Test")}>
+      <Text onPress={() => console.log("Test")}>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit commodi nisi incidunt? Explicabo deleniti harum provident ipsam natus, totam quod officiis expedita quas asperiores eius voluptas quo. Expedita, earum quis.
       </Text>
       <StatusBar style="auto" />
