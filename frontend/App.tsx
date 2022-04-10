@@ -1,20 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
+import { AppRegistry, Text, View } from 'react-native';
+import Test from './app/screens/Test';
+
+const client = new ApolloClient({
+  uri: "localhost:4000/graphql",
+  cache: new InMemoryCache()
+});
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ApolloProvider client={client}>
+      <View>
+        <Test />
+      </View>
+    </ApolloProvider>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+AppRegistry.registerComponent('MyApplication', () => App);
