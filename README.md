@@ -1,6 +1,9 @@
 # Prospect
 
-<img src="images/sdHackslogo2.png" title="SD Hacks 22 Logo" width="500"/>&nbsp;
+<p float="left">
+  <img src="images/sdHackslogo2.png" title="SD Hacks 22 Logo" width="500"/>&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="images/PROSPECT.png" title="Prospect Logo" width="414"/>
+</p>
 
 ## Purpose:
 
