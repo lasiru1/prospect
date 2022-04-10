@@ -7,7 +7,7 @@ const Login: React.FC = () => {
     return (
         <SafeAreaView style={styles.container}>
             <LoginPage style={styles.image} />
-            <LoginTextInput icon={
+            {/* <LoginTextInput icon={
                 () => (
                     <Image 
                         source={{
@@ -16,7 +16,7 @@ const Login: React.FC = () => {
                         style={{width: "10%"}}
                     />
                 )
-            } style={styles.textInput} />
+            } style={styles.textInput} /> */}
         </SafeAreaView>
     );
 }
