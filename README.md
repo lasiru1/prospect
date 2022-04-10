@@ -1,4 +1,4 @@
-# SDHacks22
+# Prospect
 
 <img src="images/sdHackslogo2.png" title="SD Hacks 22 Logo" width="500"/>&nbsp;
 
